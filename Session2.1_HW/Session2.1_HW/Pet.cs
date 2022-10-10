@@ -87,6 +87,9 @@ namespace Session2_1_HW
 
             // filter created data
             var createdPetName = listPetData.name;
+
+            //Assert the new pet has been added
+            Assert.AreEqual(petData.name, createdPetName, "Pet name not matching");
             #endregion
 
             #region Update Pet Data
@@ -112,6 +115,11 @@ namespace Session2_1_HW
                     {
                        id = 0,
                        name = "Kid Friendly"
+                    },
+                    new Tag()
+                    {
+                       id = 0,
+                       name = "Always Hungry"
                     }
                 }
             };
@@ -139,7 +147,7 @@ namespace Session2_1_HW
             var newCreatedPetName = listPetData.name;
 
             // Add data to cleanup list
-             cleanUpList.Add(listPetData);
+            cleanUpList.Add(listPetData);
 
             #endregion
 
