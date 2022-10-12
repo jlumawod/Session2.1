@@ -13,7 +13,7 @@ using System.Net;
 namespace Session2_1_HW
 {
     [TestClass]
-    public class Pet
+    public class PetTests
     {
 
         private static HttpClient httpClient;
